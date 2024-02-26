@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AA361629-706B-45FC-BA8C-97088F715110}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Educational_Society</RootNamespace>
+    <AssemblyName>Educational Society</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="backend\backindex.aspx" />
+    <Content Include="backend\oldusers.aspx" />
+    <Content Include="backend\Payyear.aspx" />
+    <Content Include="backend\useredit.aspx" />
+    <Content Include="backend\userpass.aspx" />
+    <Content Include="backend\voucher.aspx" />
+    <Content Include="frontend\FindPassword.aspx" />
+    <Content Include="frontend\index.aspx" />
+    <Content Include="frontend\Login.aspx" />
+    <Content Include="frontend\passwordChanged.aspx" />
+    <Content Include="frontend\personalInformation.aspx" />
+    <Content Include="frontend\personalInformationLook.aspx" />
+    <Content Include="frontend\register.aspx" />
+    <Content Include="frontend\register1.aspx" />
+    <Content Include="frontend\register2.aspx" />
+    <Content Include="frontend\register3.aspx" />
+    <Content Include="frontend\register4.aspx" />
+    <Content Include="frontend\transferCoucherManage.aspx" />
+    <Content Include="img\back.jpg" />
+    <Content Include="img\back.png" />
+    <Content Include="img\blackbook.png" />
+    <Content Include="img\logo.jpg" />
+    <Content Include="img\书.png" />
+    <Content Include="img\书1.png" />
+    <Content Include="img\加.png" />
+    <Content Include="js\index.js" />
+    <Content Include="js\jquery-1.6.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\payyear.js" />
+    <Content Include="js\register.js" />
+    <Content Include="js\register1.js" />
+    <Content Include="js\register2.js" />
+    <Content Include="js\register3.js" />
+    <Content Include="js\register4.js" />
+    <Content Include="js\transferCoucherManage.js" />
+    <Content Include="js\voucher.js" />
+    <Content Include="js\zoom.js" />
+    <Content Include="PatentProvince.xml" />
+    <Content Include="style\backmon.css" />
+    <Content Include="style\back_index.css" />
+    <Content Include="style\FindPasswordCss.css" />
+    <Content Include="style\indexCss.css" />
+    <Content Include="style\LoginCss.css" />
+    <Content Include="style\oldusers.css" />
+    <Content Include="style\passwordChangedCss.css" />
+    <Content Include="style\Payyear.css" />
+    <Content Include="style\Personal.css" />
+    <Content Include="style\personalInformation.css" />
+    <Content Include="style\register.css" />
+    <Content Include="style\transferCoucherManage.css" />
+    <Content Include="style\userpass.css" />
+    <Content Include="style\voucher.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="backend\backindex.aspx.cs">
+      <DependentUpon>backindex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backend\backindex.aspx.designer.cs">
+      <DependentUpon>backindex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backend\backmon.Master.cs">
+      <DependentUpon>backmon.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backend\backmon.Master.designer.cs">
+      <DependentUpon>backmon.Master</DependentUpon>
+    </Compile>
+    <Compile Include="backend\oldusers.aspx.cs">
+      <DependentUpon>oldusers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backend\oldusers.aspx.designer.cs">
+      <DependentUpon>oldusers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backend\Payyear.aspx.cs">
+      <DependentUpon>Payyear.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backend\Payyear.aspx.designer.cs">
+      <DependentUpon>Payyear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backend\useredit.aspx.cs">
+      <DependentUpon>useredit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backend\useredit.aspx.designer.cs">
+      <DependentUpon>useredit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backend\userpass.aspx.cs">
+      <DependentUpon>userpass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backend\userpass.aspx.designer.cs">
+      <DependentUpon>userpass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backend\voucher.aspx.cs">
+      <DependentUpon>voucher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backend\voucher.aspx.designer.cs">
+      <DependentUpon>voucher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frontend\DateSet.cs" />
+    <Compile Include="frontend\FindPassword.aspx.cs">
+      <DependentUpon>FindPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frontend\FindPassword.aspx.designer.cs">
+      <DependentUpon>FindPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frontend\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frontend\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frontend\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frontend\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frontend\passwordChanged.aspx.cs">
+      <DependentUpon>passwordChanged.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frontend\passwordChanged.aspx.designer.cs">
+      <DependentUpon>passwordChanged.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frontend\Personal.Master.cs">
+      <DependentUpon>Personal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frontend\Personal.Master.designer.cs">
+      <DependentUpon>Personal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="frontend\personalInformation.aspx.cs">
+      <DependentUpon>personalInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frontend\personalInformation.aspx.designer.cs">
+      <DependentUpon>personalInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frontend\personalInformationLook.aspx.cs">
+      <DependentUpon>personalInformationLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frontend\personalInformationLook.aspx.designer.cs">
+      <DependentUpon>personalInformationLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frontend\register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frontend\register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frontend\register1.aspx.cs">
+      <DependentUpon>register1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frontend\register1.aspx.designer.cs">
+      <DependentUpon>register1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frontend\register2.aspx.cs">
+      <DependentUpon>register2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frontend\register2.aspx.designer.cs">
+      <DependentUpon>register2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frontend\register3.aspx.cs">
+      <DependentUpon>register3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frontend\register3.aspx.designer.cs">
+      <DependentUpon>register3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frontend\register4.aspx.cs">
+      <DependentUpon>register4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frontend\register4.aspx.designer.cs">
+      <DependentUpon>register4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frontend\transferCoucherManage.aspx.cs">
+      <DependentUpon>transferCoucherManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frontend\transferCoucherManage.aspx.designer.cs">
+      <DependentUpon>transferCoucherManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="frontend\Personal.Master" />
+    <Content Include="backend\backmon.Master" />
+    <None Include="Properties\PublishProfiles\Educational Society.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:5165/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

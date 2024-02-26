@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Personal.master.cs" Inherits="Educational_Society.frontend.Personal" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="../style/Personal.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="top">
+            <div id="title">
+                <span>江苏省职教学会</span>
+            </div>
+            <div id="Exit">
+                <asp:Button ID="btnExit" CausesValidation="false" CssClass="btn_getout" runat="server" Text="注销" OnClick="btnExit_Click" />
+            </div>
+        </div>
+        <div id="buttom">
+            <div id="buttomLeft">
+                <div id="headpic">
+                    <img src="../img/logo.jpg" alt="Alternate Text" class="headimgControl" /></div>
+                <div id="belowheadpic">
+                    <div id="smalltitle">
+                        <asp:Label ID="Label1" runat="server" Text="Label" Font-Size="18px"></asp:Label>
+                    </div>
+                </div>
+                <asp:Button Text="转账凭证管理" CausesValidation="false" runat="server" ID="btnTVM" CssClass="leftbutton" OnClick="btnTVM_Click"/><%--Transfer voucher management--%>
+                <asp:Button Text="个人信息" CausesValidation="false" runat="server" ID="btnPI"  CssClass="leftbutton" OnClick="btnPI_Click"/><%--personal information--%>
+                <asp:Button Text="修改密码" CausesValidation="false" runat="server" ID="btnCP" CssClass="leftbutton" OnClick="btnCP_Click"/><%--changepassword--%>
+            </div>
+            <div id="placeholder">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

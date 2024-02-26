@@ -1,0 +1,119 @@
+﻿body {
+    background:#f4f4f4
+}
+
+* {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+
+#title {
+    float: left;
+}
+
+#btnExit {
+    border: 0;
+    color: #1C9AD4;
+    background: #fff;
+    float: right;
+    margin-top: -6px;
+    margin-right: 10px;
+}
+
+#Exit {
+    float: right;
+    margin-top: 20px;
+    outline: none;
+}
+
+#placeholder {
+}
+
+#top {
+    box-shadow: 0px 0px 10px 0px #ccc;
+    height: 45px;
+    line-height: 45px;
+    /* line-height: 40; */
+    font-weight: bold;
+    font-size: 22px;
+    padding-left: 30px;
+    color: #676767;
+}
+
+#form1 {
+
+}
+
+#buttom {
+    width: 1200px;
+    height: 870px;
+}
+
+#buttomLeft {
+    width: 19%;
+    height: 870px;
+    float: left;
+    box-shadow: 0px 20px 20px 0px #ddd;
+}
+
+#placeholder {
+    width: 81%;
+    float: left;
+    height: 870px;
+}
+
+.headimgControl {
+    width: 155px;
+    border-radius: 80px;
+    border: 1px solid #ddd;
+    height: 155px;
+}
+
+#headpic {
+margin-top: 20px;
+    width: 70%;
+
+}
+
+#smalltitle {
+        margin-top: 5px;
+    text-align: center;
+    margin-bottom: 15px;
+    width: 70%;
+    font-weight: bold;
+    font-size: 18px;
+       height: 37px;
+}
+
+.leftbutton {
+    width: 100%;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+        height: 70px;
+        font-size: 16px;
+        background-color:#f4f4f4;
+    /* margin-left: 10px; */
+    line-height: 80px;
+    text-align: center;
+    font-weight: bold;
+    /* color: #666; */
+    transition:300ms ease-in-out;
+    cursor:pointer
+}
+
+    .leftbutton:hover {
+        background: #ccc;
+        border-left:5px solid black;
+        text-shadow: 3px 3px 20px #ffac66;
+    color: #757575;
+    background-color: #ddd;
+    border-left: 5px solid #666;
+    box-shadow: 0px 0px 20px 0px #ddd;
+    }
+
+.btn_getout {
+    background:#f4f4f4
+}

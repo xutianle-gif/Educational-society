@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="backmon.master.cs" Inherits="Educational_Society.backend.backmon" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="../style/backmon.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="header">
+            <div class="headerchild">
+                <img src="../img/书1.png" class="imgControl" />
+                <span class="hd">江苏省职教学会</span>
+                <asp:LinkButton ID="LinkButton1" CssClass="back" runat="server" OnClick="LinkButton1_Click">注销</asp:LinkButton>
+            </div>
+        </div>
+        <ul id="menu">
+            <a href="backindex.aspx">
+                <li class="back_index">新入会成员</li>
+            </a>
+            <a href="oldusers.aspx">
+                <li class="back_user">已入会会员</li>
+            </a>
+            <a href="Payyear.aspx">
+                <li class="back_year">缴费年份</li>
+            </a>
+            <a href="voucher.aspx">
+                <li class="back_pz">凭证管理</li>
+            </a>
+        </ul>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

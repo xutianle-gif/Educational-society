@@ -1,0 +1,99 @@
+﻿body {
+}
+
+* {
+    padding: 0;
+    margin: 0 auto;
+}
+
+#all {
+    width: 100%;
+    height: 935px;
+    background: url(../img/back.jpg);
+    background-size: 1920px 935px;
+    background-repeat: no-repeat;
+    overflow-y:hidden
+}
+
+#main {
+    width: 573px;
+    height: 354px;
+    background-color: rgba(0,0,0,0.69);
+    border-radius: 20px;
+}
+
+#topmain {
+    width: 573px;
+    height: 290px;
+}
+
+.bookControl {
+    width: 35px;
+    margin-left: 15px;
+    margin-top: 15px;
+    float: left;
+}
+
+.h {
+    float: left;
+    margin-top: 23px;
+    margin-left: 8px;
+}
+
+#iconAndTitle {
+    width: 100%;
+    height: 100px;
+}
+
+.textboxcss {
+    border: 1px solid #C5C5C5;
+    border-radius: 4px;
+    outline: none;
+    height: 30px;
+    width: 320px;
+    padding-left: 10px;
+}
+
+#lbFind {
+    text-decoration: none;
+    color: #9F9F9F;
+    float: left;
+    transition: 200ms ease-in-out;
+}
+
+#lbCreate {
+    text-decoration: none;
+    color: #9F9F9F;
+    float: right;
+    transition: 200ms ease-in-out;
+}
+
+.tatr {
+    height: 44px;
+}
+
+#lg {
+    width: 300px;
+    height: 35px;
+    border: 0;
+    border: 1px solid #9F9F9F;
+    background: #9F9F9F;
+    border-radius: 4px;
+    outline: none;
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+}
+
+    #lg:hover {
+        border: 1px solid #fff;
+    }
+
+#lbFind:hover {
+    color: #fff;
+}
+
+#lbCreate:hover {
+    color: #fff;
+}

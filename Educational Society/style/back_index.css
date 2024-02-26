@@ -1,0 +1,134 @@
+﻿body {
+margin:0;
+padding:0;
+}
+
+.back_index {
+    text-shadow: 3px 3px 20px #ffac66;
+    color: #757575;
+    background-color: #ddd;
+    border-left: 5px solid #666;
+    box-shadow: 0px 0px 20px 0px #ddd;
+}
+
+#body{
+float: left;
+width: 85%;
+height: 860px;
+}
+
+
+#content {
+margin:auto;
+width:1200px
+}
+
+#title {
+border-bottom: 1px solid #000;
+    height: 25px;
+    width: 100%;
+    margin-top: 15px;
+    font-size:13px
+}
+
+.tb_user {
+width: 100%;
+    text-align: center;
+    line-height: 40px;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 10px rgba(153, 153, 153, 0.5);
+    margin-top: 25px; 
+}
+
+.tb_user a {
+    color:#000;
+    text-decoration:none    
+}
+
+.tb_user a:hover {    
+    color:red;   
+}
+
+.tb_user tr {
+    transition:100ms ease-in-out;
+}
+
+.tb_user tr:hover{
+    background-color:#ddd;
+    box-shadow: 0 0 20px 0 #999
+}
+
+.tb_user td {
+    transition:100ms ease-in-out;
+    cursor:pointer
+}
+
+.tb_user td:hover {
+    color:red;
+    text-shadow: 3px 3px 20px #ffac66;    
+}
+
+#tb_menu {
+    width: 100%;
+    line-height: 35px;
+    border: none;
+    margin-top:10px;
+    margin-bottom:10px
+}
+
+#tb_menu td {
+    width:33%
+}
+
+.btn_search {
+    float: right;
+    border: 1px solid #999;
+    width: 75px;
+    height: 30px;
+    border-radius: 4px;
+    background: #fff;
+    transition:200ms ease-in-out;
+    cursor:pointer
+}
+
+.btn_search:hover {
+    border: none;
+    background-color:#999;
+    color:white
+}
+
+.time {
+    color: #999;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.drop {
+    width: 70px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px;
+    border: none;
+    border-bottom: 1px solid #999;
+    height: 25px;
+    transition:200ms ease-in-out
+}
+
+.drop:hover {
+    text-shadow: 3px 3px 20px #ffac66;
+    /*box-shadow:0 0 10px 0 #999;*/
+    border-radius:4px;
+    font-weight:bold
+}
+
+.txt {
+    outline: none;
+    border: 1px solid #999;
+    height: 18px;
+    width: 155px;
+    padding-left: 5px;
+}
+
+
+
